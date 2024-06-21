@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #e0f7da;
+    background-color: #faf9f6;
 }
 
 header {
@@ -27,6 +27,7 @@ nav {
     padding: 0 100px;
     font-weight: bold;
     font-style: italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 nav ul {
@@ -99,11 +100,24 @@ nav ul li a:hover {
 
 /*End of Hero */
 
-/*Popular Filipino Food*/
-.popular-food {
+/*About*/
+#about {
+    border-bottom: 1px solid #eef1ee;
     padding-top: 20px;
     text-align: center;
-    background-color: #FAF9F6;
+    color: #191919;
+}
+
+#about img {
+    width: 500px;
+}
+
+/*End of About*/
+
+/*Popular Filipino Food*/
+#popular-food {
+    padding-top: 20px;
+    text-align: center;
 }
 
 .foods {
@@ -111,7 +125,6 @@ nav ul li a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 25px 20px;
-    background-color: #FAF9F6;
     text-align: center;
     border-bottom: 1px solid #eef1ee;
 }
@@ -131,17 +144,58 @@ p {
 .food h3 {
     text-decoration: underline;
 }
+
 /*End of Popular Filipino Food*/
 
 /*Menu*/
-.menu {
+#menu {
     text-align: center;
-    background-color: #FAF9F6;
+    padding: 20px;
 }
 
-.menu-items {
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #eef1ee;
+    border-radius: 10px;
+}
+
+#combo-menu {
+    text-align: center;
+    padding: 20px;
+}
+
+.combo-menu-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    border-bottom: 1px solid #eef1ee;
+}
+
+.combo-menu-item {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*End of Menu*/
+
+/*Order*/
+#order {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*Contact*/
+#contact {
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #e6b800;
+    padding: 10px;
 }
